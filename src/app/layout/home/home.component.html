@@ -14,12 +14,17 @@
       </nav>
     </div>
   </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+      <a class="mdl-navigation__link is-active" routerLink="/">首页</a>
+      <a class="mdl-navigation__link" routerLink="./projects">项目</a>
+      <a class="mdl-navigation__link" routerLink="./article">文章</a>
+      <a class="mdl-navigation__link" routerLink="./about">关于</a>
+    </nav>
+  </div>
   <main class="mdl-layout__content">
 
     <router-outlet></router-outlet>
-
-  </main>
-
     <footer class="mdl-mini-footer">
       <div class="mdl-mini-footer--middle-section">
         <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
@@ -33,4 +38,7 @@
         </button>
       </div>
     </footer>
+  </main>
+
+
 </div>
