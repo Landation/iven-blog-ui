@@ -1,0 +1,33 @@
+.social-btn {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.46;
+    border-radius: 2px;
+  }
+  .social-btn__twitter {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png');
+  }
+  .social-btn__blogger {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_white_24dp.png');
+  }
+  .social-btn__gplus {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_24dp.png');
+  }
+
+  
+ .mdl-mini-footer {
+    margin-top: 80px;
+    height: 120px;
+    padding: 40px;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: gray;
+    box-sizing: border-box;
+  }

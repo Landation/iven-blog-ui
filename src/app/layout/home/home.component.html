@@ -1,43 +1,36 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-      <div class="mdl-layout__header-row portfolio-logo-row">
-          <span class="mdl-layout__title">
-              <div class="portfolio-logo"></div>
-          </span>
-      </div>
-      <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-          <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-              <a class="mdl-navigation__link"  routerLink="/">首页</a>
-              <a class="mdl-navigation__link"  routerLink="./projects">项目</a>
-              <a class="mdl-navigation__link is-active"  routerLink="./article">文章</a>
-              <a class="mdl-navigation__link"  routerLink="./about">关于</a>
-          </nav>
-      </div>
-  </header>
-  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <div class="mdl-layout__header-row portfolio-logo-row">
+      <span class="mdl-layout__title">
+        <div class="portfolio-logo"></div>
+      </span>
+    </div>
+    <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
       <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-          <a class="mdl-navigation__link is-active" href="index.html" >首页</a>
-          <a class="mdl-navigation__link" href="blog.html">项目</a>
-          <a class="mdl-navigation__link" href="blog.html">文章</a>
-          <a class="mdl-navigation__link" href="about.html">关于</a>
+        <a class="mdl-navigation__link" routerLink="/">首页</a>
+        <a class="mdl-navigation__link" routerLink="./projects">项目</a>
+        <a class="mdl-navigation__link is-active" routerLink="./article">文章</a>
+        <a class="mdl-navigation__link" routerLink="./about">关于</a>
       </nav>
-  </div>
+    </div>
+  </header>
   <main class="mdl-layout__content">
 
-
-        <div style="height:2500px">
-            <router-outlet></router-outlet>
-            
-        </div>
-
-
-      <footer class="mdl-mini-footer">
-              <ul class="mdl-mini-footer__link-list">
-                <li><a href="#">Privacy & Terms</a></li>
-              </ul>
-      </footer>
+    <router-outlet></router-outlet>
 
   </main>
 
-
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer--middle-section">
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+          <span class="visuallyhidden">Twitter</span>
+        </button>
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+          <span class="visuallyhidden">Facebook</span>
+        </button>
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+          <span class="visuallyhidden">Google Plus</span>
+        </button>
+      </div>
+    </footer>
 </div>
